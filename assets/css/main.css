@@ -41,14 +41,11 @@ nav{
   z-index: 2000;
 }
 
-}
-nav.header-in .menu{
-  background: #fff;
-
-}
-
-nav.solid{
+nav.solid {
   background: #FFF;
+}
+
+nav.solid menu{
   color:blue;
 }
 
@@ -133,11 +130,18 @@ nav.solid .logo{
   display: inline-block;
   width: 9rem;
   margin-top: 1rem;
-  color: #FF00BF;
+  background-color: #FF00BF;
   border-radius: 0.5rem;
   margin-right: 2rem;
+  color:#FFF;
 }
 
+#nombre,#email,#city{
+  display: none;
+}
+.mostrar{
+  display: block;
+}
 .contenedor{
   position: relative;
   color:#fff;
