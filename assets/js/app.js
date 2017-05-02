@@ -1,8 +1,4 @@
-/*document.getElementById("toggle").addEventListener("click",function(event){
-  event.preventDefault();
-  document.getElementById("nav-header").classList.toggle("open");
-  document.getElementById("body").classList.toggle("overflow-hidden");
-});*/
+
 var lastScrollTop=0;
 
 window.addEventListener("scroll",function(){
@@ -12,9 +8,9 @@ window.addEventListener("scroll",function(){
       document.getElementById("nav-header").classList.add("header-in");
       document.getElementById("nav-header").classList.add("solid");
       document.getElementById("nav-header").style.opacity=1;
-      document.getElementById("sing-up").style.opacity="visibility";
+      document.getElementById("sing-up").classList.remove("oculto");
      if(currentScroll>115){
-      document.getElementById("sing-up").style.opacity="visibility";
+      document.getElementById("sing-up").classList.remove("oculto");
       }
     }else{
       document.getElementById("nav-header").classList.add("header-in");
